@@ -1,0 +1,25 @@
+# MONAI and core dependencies
+monai>=1.3.0
+numpy>=1.21.0
+matplotlib>=3.5.0
+pillow>=9.0.0
+tqdm>=4.64.0
+requests>=2.28.0
+
+# PyTorch - IMPORTANT: Install CUDA version for GPU support
+# For CPU-only version (default):
+# torch>=2.0.0
+# torchvision>=0.15.0
+
+# For NVIDIA GPU support, install PyTorch with CUDA from:
+# https://pytorch.org/get-started/locally/
+# Example for CUDA 11.8:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+# Example for CUDA 12.1:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+
+# Or use conda:
+# conda install pytorch torchvision pytorch-cuda=11.8 -c pytorch -c nvidia
+
+# Check your CUDA version with: nvidia-smi
+# Then install the matching PyTorch CUDA version
